@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    background-image: url(w1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.weather-container {
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.inputs {
+    margin-bottom: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #0c930e;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+p {
+    margin: 20px;
+    text-align: left;
+    color: #04214c;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: calc(100% - 16px);
+}
+
+input[type="text"]:focus {
+    border-color: #4caf50;
+    box-shadow: 5px 5px 5px rgba(76, 175, 80, 0.7);
+}
+
+#suggestions {
+    left: 0;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    max-height: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    z-index: 1;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Small devices (portrait phones) */
+@media only screen and (max-width: 767px) 
+{
+    .weather-container 
+    {
+        max-width: 300px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+}
+
+/* Medium devices (landscape tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+
+}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Styles */
+}
+
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1200px) {
+    /* Styles */
+}

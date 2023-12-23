@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Weather icons -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Title -->
+        <title>Weather</title>
+        <!-- CSS Style sheet -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="weather-container">
+            <h1>Weather App</h1>
+            <section class="inputs">
+                <input type="text" id="cityInput" placeholder="Enter city" oninput="showSuggestions(this.value)">
+                <div id="suggestions"></div>
+                <button onclick="getWeather()">Click Here</button>
+            </section>
+            <section class="weather-info" id="weatherInfo"></section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
